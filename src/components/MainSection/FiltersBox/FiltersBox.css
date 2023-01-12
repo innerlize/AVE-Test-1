@@ -1,0 +1,138 @@
+.items_container-filter_box {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    padding: 18px 25px 25px 25px;
+    margin-top: 20px;
+    border-radius: 10px 10px 0 0;
+    background-color: #F7F7F7;
+    z-index: 5000;
+}
+
+.filter_box-title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    color: #111111;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.filter_box-title::before,
+.filter_box-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 54px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #3EA2FF;
+}
+
+.filter_box-title::after {
+    bottom: -6px;   
+    width: 38px;
+}
+
+.filter_box-filters_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.filter_box-filter {
+    width: 50%;
+}
+
+.filter_box-filter h5 {
+    font-size: 16px;
+    color: #3EA2FF;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.filter_box-filter select {
+    width: 100%;
+    height: 25px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px;
+    color: #111111;
+    border-radius: 3px;
+    background-color: #F7F7F7;
+}
+
+.filter_box-filter select option {
+    font-size: 10px;
+    font-weight: 500;
+    color: #111111;
+}
+
+.filter_box-filter select:focus {
+    outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .items_container-filter_box {
+        position: sticky;
+        min-width: 216px;
+        height: 100%;
+        padding: 18px 20px;
+        top: 50px;
+        margin-top: 0;
+        border-radius: 10px;
+    }
+
+    .filter_box-title {
+        font-size: 24px;
+    }
+    
+    .filter_box-filters_container {
+        flex-direction: column;
+    }
+
+    .filter_box-filter {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .items_container-filter_box {
+        max-width: 15.882vw;
+        padding: 1.324vw 1.471vw;
+        top: 3.676vw;
+    }
+
+    .filter_box-title {
+        font-size: 1.765vw;
+    }
+
+    .filter_box-filter h5 {
+        font-size: 1.176vw;
+        margin-bottom: 0.368vw;
+    }
+
+    .filter_box-filter select {
+        height: 1.838vw;
+        font-size: 0.882vw;
+        padding: 0.221vw;
+        border-radius: 0.221vw;
+    }
+
+    .filter_box-filter select option {
+        font-size: 1.176vw;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .filter_box-filter select option {
+        font-size: .5vw;
+    }
+}
