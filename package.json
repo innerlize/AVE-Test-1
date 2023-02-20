@@ -2,6 +2,7 @@
   "name": "test1-ave",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tiltedveggie.github.io/AVE-Test-1",
   "dependencies": {
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -13,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "coverage": "jest --coverage",
     "lint": "eslint .",
     "prepare": "husky install"

@@ -4,6 +4,9 @@ import userEvent from '@testing-library/user-event';
 import MainSection from './MainSection.js';
 import SearchBar from './SearchBar/SearchBar.js';
 import FiltersBox from './FiltersBox/FiltersBox.js';
+import axios from 'axios';
+
+jest.mock('axios');
 
 beforeAll(() => {
 	render(<MainSection />);
@@ -32,6 +35,10 @@ test('Check if renders the Filters Box', () => {
 });
 
 test('Check if renders all the 20 items in the MainSection', async () => {
+	axios.get.mockReturnValueOnce({
+		data:
+	})
+
 	render(<MainSection />);
 
 	const itemsBoxes = await screen.findAllByRole('listitem', undefined, {
