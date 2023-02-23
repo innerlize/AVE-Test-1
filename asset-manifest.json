@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/AVE-Test-1/static/css/main.33071507.css",
+    "main.js": "/AVE-Test-1/static/js/main.688b649b.js",
+    "static/js/787.a75c874c.chunk.js": "/AVE-Test-1/static/js/787.a75c874c.chunk.js",
+    "index.html": "/AVE-Test-1/index.html",
+    "static/media/Black-Star.svg": "/AVE-Test-1/static/media/Black-Star.3e0c82005ec245ce6225.svg",
+    "static/media/Blue-Star.svg": "/AVE-Test-1/static/media/Blue-Star.5286645a07c887f1623a.svg",
+    "main.33071507.css.map": "/AVE-Test-1/static/css/main.33071507.css.map",
+    "main.688b649b.js.map": "/AVE-Test-1/static/js/main.688b649b.js.map",
+    "787.a75c874c.chunk.js.map": "/AVE-Test-1/static/js/787.a75c874c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33071507.css",
+    "static/js/main.688b649b.js"
+  ]
+}
