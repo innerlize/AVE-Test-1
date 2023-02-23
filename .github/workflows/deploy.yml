@@ -9,9 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🧲
-        uses: actions/checkout@master
-        with:
-          persist-credentials: false
+        uses: actions/checkout@v3
       - name: Install and Build 🏗️
         run: |
           npm install
