@@ -1,7 +1,7 @@
 name: Build and Deploy a React App
 on:
   push:
-    branche:
+    branches:
       - "main"
 
 jobs:
@@ -9,13 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🧲
-        uses: actions/checkout@v3
+        uses: actions/checkout@master
+        with:
+          persist-credentials: false
       - name: Install and Build 🏗️
         run: |
           npm install
           npm run build
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
