@@ -4,12 +4,17 @@ on:
     branches:
       - "main"
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🧲
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
       - name: Install and Build 🏗️
         run: |
@@ -19,5 +24,6 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: build
